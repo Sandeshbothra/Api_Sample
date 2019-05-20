@@ -1,0 +1,41 @@
+.repositories ul, .files ul{
+    float: left;
+    width: 100%;
+    list-style: none;
+    padding: 9px 30px;
+    margin: 0px;
+}
+
+.repositories ul li, .files ul li{
+    float:left;
+    width: 20%;
+    cursor: pointer;
+}
+
+.repositories ul:hover, .files ul:hover{
+    background: #eee;
+}
+
+.repositories  > :first-child, .files > :first-child{
+    background:#ddd;
+    cursor: none;
+}
+
+#webcam video{
+    width:320px;
+    height:240px;
+    margin:15px;
+    float:left;
+}
+
+#webcam canvas{
+    width:320px;
+    height:240px;
+    margin:15px;
+    float:left;
+}
+
+#webcam button{
+    clear:both;
+    margin:30px;
+}

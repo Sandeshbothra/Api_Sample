@@ -1,0 +1,12 @@
+<div class="repositories">
+    <ul>
+        <li>Repository Name</li>
+        <li>Repository Owner</li>
+    </ul>
+    {{#each model.repos as |repo|}}
+        <ul {{action "openRepositories" repo.name}}>
+            <li>{{repo.name}}</li>
+            <li>{{repo.owner.login}}</li>
+        </ul>
+    {{/each}}
+</div>

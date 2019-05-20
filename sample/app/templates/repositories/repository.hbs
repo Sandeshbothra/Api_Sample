@@ -1,0 +1,29 @@
+<div class="files">
+    <ul>
+        <li>File Name</li>
+        <li>File path</li>
+    </ul>
+    {{#each model.files as |file|}}
+        <ul>
+            <li>{{file.name}}</li>
+            <li>{{file.path}}</li>
+        </ul>
+    {{/each}}
+</div>
+
+{{#if isCreateFile}}
+<div>
+    <div>
+        <label>FileName</label>
+        <input name="name"/>
+    </div>
+    <button {{action "createFile"}}>Create File</button>
+</div>
+{{else}}
+    <button {{action "showCreateFile"}}>Create File</button>
+    <button {{action "getImage"}}>Upload Image</button>
+    <div id="webcam">
+    	<video></video>
+        <canvas></canvas>
+    </div>
+{{/if}}
